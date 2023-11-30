@@ -1,32 +1,32 @@
 const ourTeam = [{
     nome : 'Wayne Barnett',
     ruolo : 'Founder & CEO',
-    image : 'wayne-barnett-founder-ceo.jpg'
+    image : 'wayne-barnett-founder-ceo.jpg',
 },
 {
     nome : 'Angela Caroll',
     ruolo : 'Chief Editor',
-    image : 'angela-caroll-chief-editor.jpg'
+    image : 'angela-caroll-chief-editor.jpg',
 },
 {
     nome : 'Walter Gordon',
     ruolo : 'Office Manager',
-    image : 'walter-gordon-office-manager.jpg'
+    image : 'walter-gordon-office-manager.jpg',
 },
 {
     nome : 'Angela Lopez',
     ruolo : 'Social Media Manager',
-    image : 'angela-lopez-social-media-manager.jpg'
+    image : 'angela-lopez-social-media-manager.jpg',
 },
 {
     nome : 'Scott Estrada',
     ruolo : 'Developer',
-    image : 'scott-estrada-developer.jpg'
+    image : 'scott-estrada-developer.jpg',
 },
 {
     nome : 'Barbara Ramos',
     ruolo : 'Graphic Designer',
-    image : 'barbara-ramos-graphic-designer.jpg'
+    image : 'barbara-ramos-graphic-designer.jpg',
 },]
 
 const outputElement = document.querySelector('div#output');
@@ -37,7 +37,7 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log(teamElement.ruolo);
     console.log(teamElement.image);
     
-    outputElement.innerText += `${teamElement.nome} , ${teamElement.ruolo} , ${teamElement.image} <br>`;
+    outputElement.innerHTML += `${teamElement.nome} , ${teamElement.ruolo} , ${teamElement.image} <br>`;
     
     let imageElement = document.createElement('img');
     imageElement.src = `./img/${teamElement.image}`;
